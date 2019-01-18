@@ -88,7 +88,7 @@ if [ "$RESPONSE_CODE" == "200" ]
 then
   log "OK"
   I=0
-  while [ $I -le 5 ]
+  while [ $I -le 10 ]
   do
     sleep 4
     R=$(host -t txt "$RECORD_NAME.$DOMAIN" | grep -e "$CERTBOT_VALIDATION")
